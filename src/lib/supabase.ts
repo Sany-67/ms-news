@@ -1,17 +1,10 @@
 import { createClient } from "@supabase/supabase-js";
 import { Database } from "@/types/supabase";
 
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL;
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY;
+const supabaseUrl = "https://gmbcxwdqnwihtxhhhfyv.supabase.co";
+const supabaseAnonKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImdtYmN4d2RxbndpaHR4aGhoZnl2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDA3MzQwNjQsImV4cCI6MjA1NjMxMDA2NH0.Dnm6pw1z3CnW4DlPCPDLcvvUYtKgp_UIifQAEE34NIQ";
 
-// Provide default values for development environment
-const finalSupabaseUrl = supabaseUrl || "https://your-project-id.supabase.co";
-const finalSupabaseAnonKey = supabaseAnonKey || "your-anon-key";
-
-export const supabase = createClient<Database>(
-  finalSupabaseUrl,
-  finalSupabaseAnonKey,
-);
+export const supabase = createClient<Database>(supabaseUrl, supabaseAnonKey);
 
 export async function getCurrentUser() {
   try {
