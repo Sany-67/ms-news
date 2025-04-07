@@ -45,6 +45,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.8.1",
     "class-variance-authority": "^0.7.0",
+    "cloudinary-react": "^1.8.1",
     "clsx": "^2.1.1",
     "cmdk": "^1.0.0",
     "date-fns": "^3.6.0",
@@ -54,6 +55,8 @@
     "react": "^18.2.0",
     "react-day-picker": "^8.10.1",
     "react-dom": "^18.2.0",
+    "react-dropzone": "^14.3.8",
+    "react-helmet-async": "^2.0.5",
     "react-hook-form": "^7.51.5",
     "react-resizable-panels": "^2.0.19",
     "react-router": "^6.23.1",
@@ -71,7 +74,7 @@
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.38",
     "tailwindcss": "3.4.1",
-    "tempo-devtools": "^2.0.98",
+    "tempo-devtools": "^2.0.99",
     "typescript": "^5.8.2",
     "vite": "^6.2.3"
   }
